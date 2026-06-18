@@ -22,6 +22,10 @@ The project site URL should be:
 https://aires-lab.github.io/repo/
 ```
 
+## Maintenance
+
+Codex has verified direct write access to this repository.
+
 ## Rights and Citation
 
 Copyright (c) 2026 AIRES Lab. All rights reserved unless otherwise stated.
