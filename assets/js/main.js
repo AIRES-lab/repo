@@ -16,14 +16,14 @@ function resizeCanvas() {
 }
 
 const nodes = [
-  { x: 0.16, y: 0.22, r: 5, c: "#3bd6c6" },
-  { x: 0.32, y: 0.34, r: 4, c: "#7ca7ff" },
-  { x: 0.54, y: 0.22, r: 6, c: "#f0b84f" },
-  { x: 0.72, y: 0.38, r: 4, c: "#3bd6c6" },
-  { x: 0.82, y: 0.68, r: 7, c: "#ee5d5d" },
-  { x: 0.58, y: 0.74, r: 4, c: "#7ca7ff" },
-  { x: 0.38, y: 0.62, r: 6, c: "#3bd6c6" },
-  { x: 0.2, y: 0.76, r: 4, c: "#f0b84f" },
+  { x: 0.16, y: 0.22, r: 5, c: "#217d8a" },
+  { x: 0.32, y: 0.34, r: 4, c: "#3432bf" },
+  { x: 0.54, y: 0.22, r: 6, c: "#a36a00" },
+  { x: 0.72, y: 0.38, r: 4, c: "#217d8a" },
+  { x: 0.82, y: 0.68, r: 7, c: "#c33845" },
+  { x: 0.58, y: 0.74, r: 4, c: "#3432bf" },
+  { x: 0.38, y: 0.62, r: 6, c: "#217d8a" },
+  { x: 0.2, y: 0.76, r: 4, c: "#a36a00" },
 ];
 
 const edges = [
@@ -51,7 +51,7 @@ function draw(time = 0) {
     const a = nodes[from];
     const b = nodes[to];
     const pulse = (Math.sin(time / 900 + index) + 1) / 2;
-    context.strokeStyle = `rgba(174, 187, 183, ${0.16 + pulse * 0.22})`;
+    context.strokeStyle = `rgba(52, 50, 191, ${0.16 + pulse * 0.22})`;
     context.beginPath();
     context.moveTo(a.x * width, a.y * height);
     context.lineTo(b.x * width, b.y * height);
@@ -63,7 +63,7 @@ function draw(time = 0) {
     const y = node.y * height;
     const pulse = (Math.sin(time / 720 + index * 1.7) + 1) / 2;
 
-    context.fillStyle = "rgba(238, 245, 242, 0.06)";
+    context.fillStyle = "rgba(52, 50, 191, 0.08)";
     context.beginPath();
     context.arc(x, y, node.r * (4.5 + pulse), 0, Math.PI * 2);
     context.fill();
@@ -74,7 +74,7 @@ function draw(time = 0) {
     context.fill();
   });
 
-  context.strokeStyle = "rgba(59, 214, 198, 0.32)";
+  context.strokeStyle = "rgba(33, 125, 138, 0.38)";
   context.lineWidth = 1;
   for (let i = 0; i < 5; i += 1) {
     const y = height * (0.17 + i * 0.14);
