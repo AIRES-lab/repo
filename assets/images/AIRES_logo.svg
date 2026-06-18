@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" role="img" aria-labelledby="title desc">
+  <title id="title">AIRES Lab</title>
+  <desc id="desc">AIRES logo with a dotted digital head silhouette and AIRES wordmark.</desc>
+  <rect width="500" height="150" fill="#ffffff"/>
+  <defs>
+    <clipPath id="head">
+      <path d="M91 17c-28 3-52 23-60 51-2 8-8 13-14 17 5 3 10 5 12 10 3 20 20 35 42 38 16 2 34-1 50-8 4-2 7-6 7-11V29c0-8-8-13-17-13-6 0-13 0-20 1z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#head)" fill="#284cff">
+    <circle cx="31" cy="88" r="2.1"/><circle cx="36" cy="76" r="2.1"/><circle cx="36" cy="91" r="2.1"/><circle cx="41" cy="63" r="2.1"/><circle cx="41" cy="78" r="2.1"/><circle cx="41" cy="93" r="2.1"/><circle cx="46" cy="52" r="2.1"/><circle cx="46" cy="67" r="2.1"/><circle cx="46" cy="82" r="2.1"/><circle cx="46" cy="97" r="2.1"/>
+    <circle cx="51" cy="44" r="2.1"/><circle cx="51" cy="59" r="2.1"/><circle cx="51" cy="74" r="2.1"/><circle cx="51" cy="89" r="2.1"/><circle cx="51" cy="104" r="2.1"/><circle cx="56" cy="37" r="2.1"/><circle cx="56" cy="52" r="2.1"/><circle cx="56" cy="67" r="2.1"/><circle cx="56" cy="82" r="2.1"/><circle cx="56" cy="97" r="2.1"/><circle cx="56" cy="112" r="2.1"/>
+    <circle cx="61" cy="32" r="2.1"/><circle cx="61" cy="47" r="2.1"/><circle cx="61" cy="62" r="2.1"/><circle cx="61" cy="77" r="2.1"/><circle cx="61" cy="92" r="2.1"/><circle cx="61" cy="107" r="2.1"/><circle cx="66" cy="28" r="2.1"/><circle cx="66" cy="43" r="2.1"/><circle cx="66" cy="58" r="2.1"/><circle cx="66" cy="73" r="2.1"/><circle cx="66" cy="88" r="2.1"/><circle cx="66" cy="103" r="2.1"/><circle cx="66" cy="118" r="2.1"/>
+    <circle cx="71" cy="25" r="2.1"/><circle cx="71" cy="40" r="2.1"/><circle cx="71" cy="55" r="2.1"/><circle cx="71" cy="70" r="2.1"/><circle cx="71" cy="85" r="2.1"/><circle cx="71" cy="100" r="2.1"/><circle cx="71" cy="115" r="2.1"/><circle cx="76" cy="23" r="2.1"/><circle cx="76" cy="38" r="2.1"/><circle cx="76" cy="53" r="2.1"/><circle cx="76" cy="68" r="2.1"/><circle cx="76" cy="83" r="2.1"/><circle cx="76" cy="98" r="2.1"/><circle cx="76" cy="113" r="2.1"/>
+    <circle cx="81" cy="22" r="2.1"/><circle cx="81" cy="37" r="2.1"/><circle cx="81" cy="52" r="2.1"/><circle cx="81" cy="67" r="2.1"/><circle cx="81" cy="82" r="2.1"/><circle cx="81" cy="97" r="2.1"/><circle cx="81" cy="112" r="2.1"/><circle cx="86" cy="22" r="2.1"/><circle cx="86" cy="37" r="2.1"/><circle cx="86" cy="52" r="2.1"/><circle cx="86" cy="67" r="2.1"/><circle cx="86" cy="82" r="2.1"/><circle cx="86" cy="97" r="2.1"/><circle cx="86" cy="112" r="2.1"/>
+    <circle cx="91" cy="23" r="2.1"/><circle cx="91" cy="38" r="2.1"/><circle cx="91" cy="53" r="2.1"/><circle cx="91" cy="68" r="2.1"/><circle cx="91" cy="83" r="2.1"/><circle cx="91" cy="98" r="2.1"/><circle cx="91" cy="113" r="2.1"/><circle cx="96" cy="25" r="2.1"/><circle cx="96" cy="40" r="2.1"/><circle cx="96" cy="55" r="2.1"/><circle cx="96" cy="70" r="2.1"/><circle cx="96" cy="85" r="2.1"/><circle cx="96" cy="100" r="2.1"/><circle cx="96" cy="115" r="2.1"/>
+    <circle cx="101" cy="28" r="2.1"/><circle cx="101" cy="43" r="2.1"/><circle cx="101" cy="58" r="2.1"/><circle cx="101" cy="73" r="2.1"/><circle cx="101" cy="88" r="2.1"/><circle cx="101" cy="103" r="2.1"/><circle cx="106" cy="32" r="2.1"/><circle cx="106" cy="47" r="2.1"/><circle cx="106" cy="62" r="2.1"/><circle cx="106" cy="77" r="2.1"/><circle cx="106" cy="92" r="2.1"/><circle cx="111" cy="38" r="2.1"/><circle cx="111" cy="53" r="2.1"/><circle cx="111" cy="68" r="2.1"/><circle cx="111" cy="83" r="2.1"/><circle cx="116" cy="48" r="2.1"/><circle cx="116" cy="63" r="2.1"/><circle cx="116" cy="78" r="2.1"/>
+  </g>
+  <g fill="none" stroke-linecap="square" stroke-linejoin="miter" stroke-width="10">
+    <path d="M166 114 199 36 232 114M179 84h40" stroke="#06051f"/>
+    <path d="M269 42v66M250 42h38M250 108h38" stroke="#15104b"/>
+    <path d="M318 42h48l18 18v14l-18 17h-48V42zm42 49 27 24" stroke="#2924a8"/>
+    <path d="M421 42h49M421 42v66h54M421 75h39" stroke="#2924a8"/>
+  </g>
+</svg>
