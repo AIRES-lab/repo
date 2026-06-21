@@ -3,6 +3,28 @@ if (year) {
   year.textContent = new Date().getFullYear();
 }
 
+const introVideo = document.querySelector(".intro-video");
+if (introVideo) {
+  introVideo.muted = true;
+  introVideo.defaultMuted = true;
+  introVideo.playsInline = true;
+  introVideo.preload = "auto";
+
+  const playIntroVideo = () => {
+    const playAttempt = introVideo.play();
+    if (playAttempt) {
+      playAttempt.catch(() => {
+        introVideo.controls = true;
+      });
+    }
+  };
+
+  introVideo.addEventListener("canplay", playIntroVideo, { once: true });
+  introVideo.addEventListener("loadeddata", playIntroVideo, { once: true });
+  introVideo.load();
+  playIntroVideo();
+}
+
 const canvas = document.querySelector("#agentMap");
 const context = canvas?.getContext("2d");
 
