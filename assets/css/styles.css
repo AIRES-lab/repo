@@ -230,74 +230,34 @@ h3 {
   color: var(--text);
 }
 
-.simulation-panel {
+.hero-video {
   position: relative;
   min-height: 34rem;
-  border: 1px solid var(--line);
-  background:
-    linear-gradient(135deg, rgba(52, 50, 191, 0.16), transparent 38%),
-    linear-gradient(315deg, rgba(33, 125, 138, 0.14), transparent 40%),
-    var(--panel);
-  box-shadow: var(--shadow);
+  aspect-ratio: 16 / 9;
   overflow: hidden;
+  background: transparent;
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    #000 54%,
+    rgba(0, 0, 0, 0.9) 66%,
+    rgba(0, 0, 0, 0.42) 82%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse at center,
+    #000 54%,
+    rgba(0, 0, 0, 0.9) 66%,
+    rgba(0, 0, 0, 0.42) 82%,
+    transparent 100%
+  );
 }
 
-.simulation-panel::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(16, 19, 45, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(16, 19, 45, 0.08) 1px, transparent 1px);
-  background-size: 3.25rem 3.25rem;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.85), transparent 88%);
-}
-
-#agentMap {
-  position: absolute;
-  inset: 0;
+.intro-video {
+  display: block;
   width: 100%;
   height: 100%;
-}
-
-.panel-readout {
-  position: absolute;
-  width: min(16rem, calc(100% - 2rem));
-  padding: 0.8rem;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.82);
-  backdrop-filter: blur(10px);
-}
-
-.panel-readout span,
-.panel-readout strong {
-  display: block;
-}
-
-.panel-readout span {
-  color: var(--muted);
-  font-size: 0.76rem;
-  text-transform: uppercase;
-}
-
-.panel-readout strong {
-  margin-top: 0.16rem;
-  font-size: 0.95rem;
-}
-
-.readout-one {
-  top: 1.2rem;
-  right: 1.2rem;
-}
-
-.readout-two {
-  left: 1.2rem;
-  bottom: 5.2rem;
-}
-
-.readout-three {
-  right: 1.2rem;
-  bottom: 1.2rem;
+  min-height: inherit;
+  object-fit: cover;
 }
 
 .section {
@@ -464,7 +424,7 @@ h3 {
     font-size: clamp(2.35rem, 12vw, 3.65rem);
   }
 
-  .simulation-panel {
+  .hero-video {
     min-height: 27rem;
   }
 
