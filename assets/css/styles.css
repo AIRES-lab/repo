@@ -146,8 +146,8 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.72fr) minmax(22rem, 1.28fr);
-  gap: clamp(1.2rem, 3vw, 2.5rem);
+  grid-template-columns: minmax(17rem, 0.52fr) minmax(32rem, 1.48fr);
+  gap: clamp(0.8rem, 2vw, 1.8rem);
   align-items: center;
   min-height: calc(100vh - 4.5rem);
   padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 4vw, 4rem) 3rem;
@@ -155,7 +155,7 @@ a {
 }
 
 .hero-copy {
-  max-width: 38rem;
+  max-width: 30rem;
 }
 
 .eyebrow {
@@ -182,8 +182,8 @@ h3 {
 }
 
 h1 {
-  max-width: 15ch;
-  font-size: clamp(2rem, 3.9vw, 3.7rem);
+  max-width: 14ch;
+  font-size: clamp(1.75rem, 3vw, 3rem);
 }
 
 h2 {
@@ -195,17 +195,17 @@ h3 {
 }
 
 .hero-lede {
-  max-width: 36rem;
-  margin: 1.5rem 0 0;
+  max-width: 30rem;
+  margin: 1.3rem 0 0;
   color: var(--muted);
-  font-size: clamp(1.05rem, 1.7vw, 1.28rem);
+  font-size: clamp(0.98rem, 1.35vw, 1.12rem);
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
-  margin-top: 2rem;
+  margin-top: 1.6rem;
 }
 
 .button {
@@ -233,13 +233,13 @@ h3 {
 
 .hero-video {
   position: relative;
-  justify-self: start;
-  width: min(100%, 58rem);
-  min-height: 34rem;
+  justify-self: stretch;
+  width: 100%;
+  min-height: 36rem;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   background: transparent;
-  transform: translateX(clamp(-1.5rem, -2vw, -0.5rem));
+  transform: none;
   -webkit-mask-image: radial-gradient(
     ellipse at center,
     #000 54%,
@@ -394,6 +394,7 @@ h3 {
   .hero-video {
     justify-self: stretch;
     width: 100%;
+    min-height: 30rem;
     transform: none;
   }
 
@@ -431,11 +432,11 @@ h3 {
   }
 
   h1 {
-    font-size: clamp(1.9rem, 9vw, 2.75rem);
+    font-size: clamp(1.75rem, 8vw, 2.35rem);
   }
 
   .hero-video {
-    min-height: 27rem;
+    min-height: 24rem;
   }
 
   .feature-grid,
