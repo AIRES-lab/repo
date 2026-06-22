@@ -146,11 +146,12 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(21rem, 1.08fr);
-  gap: clamp(2rem, 5vw, 4.5rem);
+  grid-template-columns: minmax(0, 0.95fr) minmax(18rem, 0.9fr);
+  gap: clamp(1.5rem, 3.5vw, 3rem);
   align-items: center;
   min-height: calc(100vh - 4.5rem);
   padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 4vw, 4rem) 3rem;
+  overflow: hidden;
 }
 
 .hero-copy {
@@ -181,8 +182,8 @@ h3 {
 }
 
 h1 {
-  max-width: 17ch;
-  font-size: clamp(2.45rem, 5.6vw, 5.35rem);
+  max-width: 18ch;
+  font-size: clamp(2.2rem, 4.7vw, 4.45rem);
 }
 
 h2 {
@@ -232,10 +233,13 @@ h3 {
 
 .hero-video {
   position: relative;
+  justify-self: start;
+  width: min(100%, 44rem);
   min-height: 34rem;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   background: transparent;
+  transform: translateX(clamp(-2.25rem, -3vw, -1rem));
   -webkit-mask-image: radial-gradient(
     ellipse at center,
     #000 54%,
@@ -384,7 +388,13 @@ h3 {
   }
 
   h1 {
-    max-width: 14ch;
+    max-width: 16ch;
+  }
+
+  .hero-video {
+    justify-self: stretch;
+    width: 100%;
+    transform: none;
   }
 
   .feature-grid {
@@ -421,7 +431,7 @@ h3 {
   }
 
   h1 {
-    font-size: clamp(2.35rem, 12vw, 3.65rem);
+    font-size: clamp(2.05rem, 10vw, 3.05rem);
   }
 
   .hero-video {
