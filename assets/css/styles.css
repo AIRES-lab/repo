@@ -347,6 +347,52 @@ h3 {
   background: var(--bg-soft);
 }
 
+.member-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  margin-top: 1.2rem;
+}
+
+.member-photo {
+  width: clamp(5.5rem, 10vw, 7rem);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 1px solid var(--line);
+}
+
+.member-role,
+.publication-meta {
+  margin: 0 0 0.45rem;
+  color: var(--teal);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.member-card h3,
+.publication-card h3 {
+  margin: 0;
+}
+
+.publication-card {
+  margin-top: 1.2rem;
+}
+
+.publication-link {
+  display: inline-block;
+  margin-top: 0.85rem;
+  color: var(--blue);
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.publication-link:hover {
+  text-decoration: underline;
+}
+
 .contact {
   display: grid;
   grid-template-columns: minmax(0, 0.88fr) minmax(18rem, 1fr) auto;
@@ -441,6 +487,10 @@ h3 {
 
   .feature-grid,
   .people-publications {
+    grid-template-columns: 1fr;
+  }
+
+  .member-card {
     grid-template-columns: 1fr;
   }
 
