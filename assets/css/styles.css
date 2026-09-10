@@ -263,6 +263,7 @@ h3 {
   min-height: inherit;
   object-fit: contain;
 }
+
 .section {
   padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 4vw, 4rem);
   border-top: 1px solid var(--line);
@@ -289,17 +290,142 @@ h3 {
   margin-bottom: 2rem;
 }
 
-.feature-grid {
+.feature-grid,
+.project-medallions {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
 }
 
+.project-medallions {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.feature-card,
+.project-medallion {
+  border: 1px solid var(--line);
+  background: var(--bg-soft);
+}
+
 .feature-card {
   min-height: 19rem;
   padding: 1.2rem;
+}
+
+.project-medallion {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  min-height: 32rem;
+  padding: clamp(1.2rem, 2.5vw, 1.8rem);
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.project-medallion::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-top: 0.35rem solid var(--teal);
+  pointer-events: none;
+}
+
+.eris-card::before {
+  border-top-color: var(--red);
+}
+
+.tessaron-card::before {
+  border-top-color: var(--blue);
+}
+
+.project-medallion-top {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+.project-icon {
+  display: grid;
+  place-items: center;
+  width: 4.4rem;
+  aspect-ratio: 1;
   border: 1px solid var(--line);
+  color: var(--blue);
   background: var(--bg-soft);
+}
+
+.project-icon svg {
+  width: 2.7rem;
+  height: 2.7rem;
+}
+
+.project-kicker,
+.project-subtitle {
+  margin: 0;
+}
+
+.project-kicker {
+  color: var(--teal);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-medallion h3 {
+  margin-top: 0.2rem;
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+}
+
+.project-subtitle,
+.project-medallion p,
+.project-points {
+  color: var(--muted);
+}
+
+.project-flow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.project-flow span {
+  display: grid;
+  place-items: center;
+  min-height: 3.2rem;
+  padding: 0.55rem;
+  background: var(--bg-soft);
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project-points {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-self: end;
+}
+
+.project-tags span {
+  padding: 0.38rem 0.55rem;
+  border: 1px solid var(--line);
+  background: rgba(52, 50, 191, 0.06);
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 750;
 }
 
 .card-index {
@@ -465,17 +591,6 @@ h3 {
 }
 
 @media (max-width: 980px) {
-  .page-layout,
-  .repo-panel {
-    grid-template-columns: 1fr;
-  }
-
-  .page-hero h1 {
-    max-width: 16ch;
-  }
-}
-
-@media (max-width: 980px) {
   .site-header {
     align-items: flex-start;
     flex-direction: column;
@@ -485,7 +600,9 @@ h3 {
   .hero,
   .intro,
   .split,
-  .contact {
+  .contact,
+  .page-layout,
+  .repo-panel {
     grid-template-columns: 1fr;
   }
 
@@ -493,7 +610,8 @@ h3 {
     min-height: auto;
   }
 
-  h1 {
+  h1,
+  .page-hero h1 {
     max-width: 16ch;
   }
 
@@ -504,7 +622,8 @@ h3 {
     transform: none;
   }
 
-  .feature-grid {
+  .feature-grid,
+  .project-medallions {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -546,7 +665,16 @@ h3 {
   }
 
   .feature-grid,
+  .project-medallions,
   .people-publications {
+    grid-template-columns: 1fr;
+  }
+
+  .project-medallion {
+    min-height: auto;
+  }
+
+  .project-medallion-top {
     grid-template-columns: 1fr;
   }
 
